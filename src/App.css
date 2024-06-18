@@ -1,0 +1,64 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+
+input {
+  padding: 5px;
+  display: inline-block;
+  font-family: inherit;
+  text-align: center;
+  color: black;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+button {
+  display: inline-block;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: center;
+  padding: 6px 9px;
+  border: none;
+  border-radius: 5px;
+}
+
+.app_btn {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  transition: transform 0.5s filter 0.5s;
+}
+.app_btn:hover {
+  transform: scale(1.05);
+  filter: brightness(1.25);
+  transition: transform 0.5s filter 0.5s;
+}
+
+.app_container {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.app_header {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -1,0 +1,155 @@
+.userCard {
+  width: 250px;
+  border: 1px solid #808088;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.userCard_name {
+  padding-bottom: 5px;
+}
+
+.userCard_list {
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.userCard_item {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.userCard_itemEmail {
+  color: #808085;
+  font-size: inherit;
+  font-weight: 900;
+}
+.userCard_itemBirth {
+  color: #808085;
+  font-size: inherit;
+  font-weight: 900;
+}
+
+.userCard_btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+.userCard_btn > button {
+  margin: 5px;
+}
+
+.userCard_del {
+  background-color: red;
+}
+
+.userCard_del > svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  border: none;
+  fill: white;
+}
+.userCard_del > svg:hover {
+  transform: scale(1.05);
+  filter: brightness(1.25);
+  transition: transform 0.5s filter 0.5s;
+}
+
+.userCard_edit > svg {
+  height: 1.75rem;
+  width: 1.75rem;
+  border: none;
+}
+.userCard_edit > svg:hover {
+  transform: scale(1.075);
+  filter: brightness(1.25);
+  transition: transform 0.5s filter 0.3s;
+}
+
+span > svg {
+  height: 1rem;
+  width: 1rem;
+  border: none;
+}
+
+.userFormMessage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto;
+  background-color: #5555;
+  min-width: 100%;
+  min-height: 100vh;
+  display: none;
+  transition: transform 0.5s;
+}
+.userFormMessage.is_openMessage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.userFormMessage_h2 {
+  margin: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.userFormMessage_p {
+  margin: 0;
+  margin-left: 10px;
+}
+.userFormMessageCont {
+  height: 30vh;
+  width: 250px;
+  border: 5px solid #8080906b;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+}
+
+.userFormMessageCont:hover {
+  transition: transform 0.5s, box-shadow 0.5s;
+  box-shadow: 0px 0 45px #808088;
+}
+
+.userFormMessage_close {
+  margin-left: 200px;
+  width: 3rem;
+  height: 2rem;
+  border: none;
+  background: transparent;
+}
+
+.userFormMessage_close:hover {
+  transform: scale(1.15);
+  transition: transform 0.005s filter 0.003s;
+}
+
+.userFormMessage_btnConfirm {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  transition: transform 0.5s filter 0.5s;
+}
+.userFormMessage_btnConfirm:hover {
+  transform: scale(1.01);
+  filter: brightness(1.25);
+  transition: transform 0.5s filter 0.5s;
+}
